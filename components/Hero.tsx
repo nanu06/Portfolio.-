@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import image from '../assets/image.jpg'
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackGroundCircles from "./BackGroundCircles";
 type Props = {};
@@ -17,10 +19,14 @@ const Hero = (props: Props) => {
   return (
     <div className="flex flex-col h-screen space-y-8 items-center justify-center text-center overflow-hidden ">
       <BackGroundCircles />
-      <img
-        src="https://avatars.githubusercontent.com/u/91265243?v=4"
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+    
+      <Image
+        src={image}
+        className="relative rounded-full  mx-auto object-cover"
         alt=""
+        height={128}
+        width={128}
+       
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">

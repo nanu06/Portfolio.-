@@ -7,6 +7,8 @@ import Hero from "../../components/Hero";
 import Skills from "../../components/Skills";
 import Projects from "../../components/Projects";
 import ContactMe from "../../components/ContactMe";
+import Image from "next/image";
+import image1 from '../images/image1.jpg'
 // import { GetStaticProps } from "next";
 // import { PageInfo, Project, Skill, Social } from "../../typing";
 // import { fetchPageInfo } from "../../utils/fetchPageInfo";
@@ -27,7 +29,7 @@ const Home=()=> {
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Head>
-        <title>Nanu's Portfolio</title>
+        <title>Nanu-Portfolio</title>
       </Head>
 
       <Header />
@@ -55,10 +57,14 @@ const Home=()=> {
             className="flex items-center justify-center 
           "
           >
-            <img
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              src="https://avatars.githubusercontent.com/u/91265243?v=4"
+          
+            <Image
+
+              className=" rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+              src={image1}
               alt=""
+              width={10}
+              height={10}
             />
           </div>
         </footer>
