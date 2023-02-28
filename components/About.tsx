@@ -1,6 +1,6 @@
 import React from "react";
-import photo from '../assets/photo2.jpg'
-
+import about from "../assets/about.jpg";
+import Image from "next/image";
 import { motion } from "framer-motion";
 type Props = {};
 
@@ -19,9 +19,7 @@ const About = (props: Props) => {
         About
       </h3>
 
-      <motion.img
-
-        src="https://mail.google.com/mail/u/0?ui=2&ik=216766acda&attid=0.1&permmsgid=msg-a:r187031596088306763&th=18683bc986b01272&view=att&disp=safe&realattid=18683bc496b42f64ed11"
+      <motion.div
         className="absolute top-[30%] mb-20 rounded-full h-28 w-28 md:w-56 md:h-56  mx-auto object-cover "
         initial={{
           x: -200,
@@ -35,8 +33,14 @@ const About = (props: Props) => {
         transition={{
           duration: 1.2,
         }}
-      />
-      <div className="space-y-10 px-0 md:px-10 text-center " style={{marginTop:"25rem"}}>
+      >
+        <Image src={about} alt=""  className="rounded-full"/>
+      </motion.div>
+
+      <div
+        className="space-y-10 px-0 md:px-10 text-center "
+        style={{ marginTop: "25rem" }}
+      >
         <h4 className="text-4xl font-semibold ">
           Here is a{" "}
           <span className="underline decoration-[#F7AB0A]/50 ">little </span>{" "}
