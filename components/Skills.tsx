@@ -23,7 +23,7 @@ const Skills = (props: Props) => {
         <h3 className="absolute top-[24%]   uppercase tracking-[3px] text-gray-500 text-sm">
           Hover over a skill for current profieciency
         </h3>
-        <div style={{ marginTop: "10rem" }} className="grid grid-cols-4 gap-5 ">
+        <div style={{ marginTop: "10rem" }} className="grid grid-cols-3 md:grid-cols-4 gap-5  ">
           <Skill
             imageSource=" https://cdn.iconscout.com/icon/free/png-512/html5-10-569380.png"
             directionLeft={true}
